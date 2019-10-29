@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>GitHub Authentication Example</title>
+  <title>TERRY1 GitHub Authentication Example</title>
   <!--- This example uses jQuery: -->
   <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
 
@@ -16,17 +16,17 @@
         var authenticator = new netlify.default ({});
         authenticator.authenticate({provider:"github", scope: "user"}, function(err, data) {
           if (err) {
-            return $("#output").text("Error Authenticating with GitHub: " + err);
+            return $("#output").text("TERRY2 Error Authenticating with GitHub: " + err);
           }
-          $("#output").text("Authenticated with GitHub. Access Token: " + data.token);
+          $("#output").text("TERRY3 Authenticated with GitHub. Access Token: " + data.token);
         });
       });
     });
   </script>
 </head>
 <body>
-  <h1>GitHub Auth Demo:</h1>
-  <p><a href="#" id="login">Authenticate</a></p>
+  <h1>TERRY4 GitHub Auth Demo:</h1>
+  <p><a href="#" id="login">TERRY5 Authenticate</a></p>
   <p id="output"></p>
 </body>
 </html>
